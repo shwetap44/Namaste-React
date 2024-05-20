@@ -1,0 +1,25 @@
+********************Inception*******************
+1.CDN is a place where react or any library is hosted. so we fetch the hosted library and load in our code by script tag
+2. creating elemet is from react while creating root id from react dom
+3. most costly thing in UI is when you are changing a dom tree/ dom manipulation
+4. ReactElement is nothing but an object which browser understands
+
+const parent = React.createElement("div", 
+{id: "parent"},
+[
+React.createElement("div", 
+{id: "child"}, 
+[React.createElement("h1", {}, "I am an h1 tag"),
+React.createElement("h2", {}, "I am an h2 tag"),
+]),
+React.createElement("div", 
+{id: "child2"}, 
+[React.createElement("h1", {}, "I am an h1 tag"),
+React.createElement("h2", {}, "I am an h2 tag"),
+]),]
+)
+
+this how the code will look like if we don't use jsx
+5. Whatever is there in root already it'll be replaced by root.render in react.
+6. We can render react to even a small portion of code. We don't have to apply to whole application
+7. ReactDOM.createRoot is responsible for assigning a root for react rendering code
